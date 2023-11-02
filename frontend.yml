@@ -1,5 +1,6 @@
 - name: Frontend setup
   hosts: all
+  become: yes
   tasks:
     - name: Installing nginx
       ansible.builtin.dnf:
