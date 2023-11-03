@@ -23,10 +23,8 @@
 
    #- name: Extracting frontend code
 
-
     #   -name: Enable the nginx service
     #   -name: Restarting nginx service
-
 
     #download_and_extract(){
     #  echo Downloaded component code
