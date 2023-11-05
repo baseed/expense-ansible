@@ -1,6 +1,6 @@
 
 
-- name: MYSQL Setup
+- name: MySQL Setup
   hosts: all
   becomes: yes
   tasks:
