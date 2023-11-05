@@ -39,9 +39,10 @@
     - name: start backend service
       ansible.builtin.systemd:
         name: backend
-        state: restated
+        state: restarted
         enabled: yes
         daemon-reload: yes
+        #mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pExpenseApp@1 < /app/schema/backend.sql
 
 
 
