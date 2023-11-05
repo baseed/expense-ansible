@@ -10,7 +10,7 @@
    - name: desable mysql 8 version
      ansible.builtin.shell: dnf install mysql-community-server -y
    - name: install mysql server
-     ansinle.builtin.dnf:
+     ansible.builtin.dnf:
        name: mysql-community-server -y
        state: present
    - name: start the mysql server
