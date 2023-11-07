@@ -17,7 +17,7 @@
        state: present
 
    - name: start the mysql server
-     ansible.builtin.systemd:
+     ansible.builtin.service:
        name: mysql
        state: restarted
 
