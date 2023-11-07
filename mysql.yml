@@ -19,6 +19,7 @@
 
    - name: start the mysql server
      ansible.builtin.systemd:
+       name: mysql
        state: restarted
 
    - name: set root password
