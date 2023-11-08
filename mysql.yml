@@ -8,7 +8,6 @@
        dest: /etc/yum.repos.d/mysql.repo
 
        # crosscheck it
-
    - name: disable mysql 8 version
      ansible.builtin.shell: dnf module disable mysql -y
 
