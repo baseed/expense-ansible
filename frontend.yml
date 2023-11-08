@@ -24,7 +24,7 @@
     - name: Download frontend code and Extract
       ansible.builtin.unarchive:
         src: https://expense-artifacts.s3.amazonaws.com/frontend.zip
-        dest: /usr/share/nginx/html/*
+        dest: /usr/share/nginx/html
         remote_src: yes
     - name: Restarting nginx service
       ansible.builtin.systemd:
