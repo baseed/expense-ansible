@@ -10,7 +10,7 @@
        # crosscheck it
 
    - name: disable mysql 8 version
-     ansible.builtin.shell: dnf module disable mysql -y
+     ansible.builtin.shell: dnf module disable mysql - y
 
    - name: install mysql server
      ansible.builtin.dnf:
