@@ -19,7 +19,10 @@
   - name: Add the Application user
     ansible.builtin.user:
       name: expense
-
+  - name: Include App Pre-requlsites
+    ansible.builtin.import_role:
+      name: common
+      tasks_from: app_pre
   - name: Install NodeJS dependencies
     ansible.builtin.shell: npm install
     args:
